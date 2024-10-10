@@ -30,7 +30,7 @@ From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.m
     - 资料：
         1. [梯度下降算法原理](https://dsfftp.readthedocs.io/zh-cn/latest/Linear-Regression/%E6%A2%AF%E5%BA%A6%E4%B8%8B%E9%99%8D%E6%B3%95%E7%9A%84%E6%95%B0%E5%AD%A6%E5%8E%9F%E7%90%86.html)
         2. [梯度下降算法实现demo](https://blog.csdn.net/AbBaCl/article/details/78817775)
-- [x] 2. 实现一个基于深度学习的图像分类算法
+- [x] 2. [实现一个基于深度学习的图像分类算法](./MNIST_CNN/)
     - 具体：使用TensorFlow或PyTorch实现一个卷积神经网络，并训练模型进行图像分类
     - 要求：算法实现代码需包含注释，并附上算法的基本原理和推导过程
     - 展示方式：当场展示（可线上）+考核时提问+可复现源码及其文档
@@ -46,7 +46,7 @@ From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.m
     - 资料：
         1. [LSTM/GRU原理](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
         2. [Transformer for Time Series](https://medium.com/intel-tech/how-to-apply-transformers-to-time-series-models-spacetimeformer-e452f2825d2e)
-- [ ] 4. 实现一个图像物体识别算法与模型
+- [x] 4. [实现一个图像物体识别算法与模型](./Vision/)
     - 具体：使用Python或其他编程语言实现一个基于规则或深度学习的图像物体识别算法，并训练模型进行图像分类
     - 要求：算法实现代码需包含注释，并附上算法的基本原理和推导过程
     - 展示方式：当场展示（可线上）+考核时提问+可复现源码及其文档
@@ -71,7 +71,7 @@ From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.m
     - 资料：
         1. [MoFA框架](https://github.com/moxin-org/mofa/)
         2. [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
-- [ ] 7. 实现一个大模型训练推理优化的方法或工具
+- [ ] 7. [实现一个大模型训练推理优化的方法或工具](./Speed_optimization/)
     - 具体：使用Python与C++、CUDA等，实现一个大模型训练推理优化的方法或工具，并分析其优缺点
     - 要求：算法实现代码需包含注释，并附上算法的基本原理和推导过程
     - 展示方式：当场展示（可线上）+考核时提问+可复现源码及其文档

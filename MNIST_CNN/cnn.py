@@ -18,7 +18,11 @@ class CNN(nn.Module):
 
         # First convolutional layer: 1 input channel, 8 output channels, 3x3 kernel, stride 1, padding 1
         self.conv1 = nn.Conv2d(
-            in_channels=in_channels, out_channels=8, kernel_size=3, stride=1, padding=1
+            in_channels=in_channels,
+            out_channels=8,
+            kernel_size=3,
+            stride=1,
+            padding=1,
         )
         # Max pooling layer: 2x2 window, stride 2
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
@@ -41,9 +45,13 @@ class CNN(nn.Module):
             torch.Tensor
                 The output tensor after passing through the network.
         """
-        x = F.relu(self.conv1(x))  # Apply first convolution and ReLU activation
+        x = F.relu(
+            self.conv1(x)
+        )  # Apply first convolution and ReLU activation
         x = self.pool(x)  # Apply max pooling
-        x = F.relu(self.conv2(x))  # Apply second convolution and ReLU activation
+        x = F.relu(
+            self.conv2(x)
+        )  # Apply second convolution and ReLU activation
         x = self.pool(x)  # Apply max pooling
         x = x.reshape(x.shape[0], -1)  # Flatten the tensor
         x = self.fc1(x)  # Apply fully connected layer

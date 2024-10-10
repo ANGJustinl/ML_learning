@@ -23,18 +23,30 @@ input_size = 28 * 28  # 784 pixels in one image (28x28)
 num_classes = 10  # 10 digits (0-9)
 learning_rate = 0.001  # Learning rate for the optimizer
 batch_size = 64  # Number of samples to be considered in each iteration
-num_epochs = 10  # Number of times the model will be trained on the entire dataset
+num_epochs = (
+    10  # Number of times the model will be trained on the entire dataset
+)
 
 # Load the MNIST dataset
 train_dataset = datasets.MNIST(
-    root="MNIST_CNN/data/", download=True, train=True, transform=transforms.ToTensor()
+    root="MNIST_CNN/data/",
+    download=True,
+    train=True,
+    transform=transforms.ToTensor(),
 )
-train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
+train_loader = DataLoader(
+    dataset=train_dataset, batch_size=batch_size, shuffle=True
+)
 
 test_dataset = datasets.MNIST(
-    root="MNIST_CNN/data/", download=True, train=False, transform=transforms.ToTensor()
+    root="MNIST_CNN/data/",
+    download=True,
+    train=False,
+    transform=transforms.ToTensor(),
 )
-test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=True)
+test_loader = DataLoader(
+    dataset=test_dataset, batch_size=batch_size, shuffle=True
+)
 
 # Define the model for MNIST dataset
 model = CNN(in_channels=1, num_classes=num_classes).to(device)
@@ -91,7 +103,9 @@ else:
     model, optimizer, start_epoch, loss = load_checkpoint(
         checkpoint_path, model, optimizer
     )
-    logger.info(f"Model loaded successfully from epoch {start_epoch} with loss {loss}")
+    logger.info(
+        f"Model loaded successfully from epoch {start_epoch} with loss {loss}"
+    )
 
 check_accuracy(train_loader, model, device)
 check_accuracy(test_loader, model, device)

@@ -29,12 +29,18 @@ def check_accuracy(loader, model, device):
 
             # Forward pass: compute the model output
             scores = model(x)
-            _, predictions = scores.max(1)  # Get the index of the max log-probability
-            num_correct += (predictions == y).sum()  # Count correct predictions
+            _, predictions = scores.max(
+                1
+            )  # Get the index of the max log-probability
+            num_correct += (
+                predictions == y
+            ).sum()  # Count correct predictions
             num_samples += predictions.size(0)  # Count total samples
 
         # Calculate accuracy
         accuracy = float(num_correct) / float(num_samples) * 100
-        logger.info(f"Got {num_correct}/{num_samples} with accuracy {accuracy:.2f}%")
+        logger.info(
+            f"Got {num_correct}/{num_samples} with accuracy {accuracy:.2f}%"
+        )
 
     model.train()  # Set the model back to training mode
