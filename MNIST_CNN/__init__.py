@@ -26,10 +26,10 @@ batch_size = 64  # Number of samples to be considered in each iteration
 num_epochs = 10  # Number of times the model will be trained on the entire dataset
 
 # Load the MNIST dataset
-train_dataset = datasets.MNIST(root="data/MINST/", download=True, train=True, transform=transforms.ToTensor())
+train_dataset = datasets.MNIST(root="MNIST_CNN/data/", download=True, train=True, transform=transforms.ToTensor())
 train_loader = DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
 
-test_dataset = datasets.MNIST(root="data/MINST/", download=True, train=False, transform=transforms.ToTensor())
+test_dataset = datasets.MNIST(root="MNIST_CNN/data/", download=True, train=False, transform=transforms.ToTensor())
 test_loader = DataLoader(dataset=test_dataset, batch_size=batch_size, shuffle=True)
 
 # Define the model for MNIST dataset
@@ -40,7 +40,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
 # Define the Tensorboard writer
-writer = SummaryWriter('./logs')
+writer = SummaryWriter('MNIST_CNN/logs/')
 
 if checkpoint_path is None:
     # Train the model
@@ -56,13 +56,16 @@ if checkpoint_path is None:
             scores = model(data)
             loss = criterion(scores, targets)
 
+            running_loss = loss.item()
+            writer.add_scalar("loss", running_loss, epoch * len(train_loader) + batch_index)
+
             # Backward pass: compute gradient of the loss with respect to model parameters
             optimizer.zero_grad()
             loss.backward()
 
             # Update the model parameters
             optimizer.step()
-            writer.add_scalar("loss", loss, epoch * len(train_loader) + batch_index)
+
     writer.close()
     logger.logger.info("Training completed")
     
@@ -72,7 +75,7 @@ if checkpoint_path is None:
         'model_state_dict': model.state_dict(),
         'optimizer_state_dict': optimizer.state_dict(),
         'loss': loss
-    }, "mnist_cnn.checkpoint")
+    }, "MNIST_CNN/mnist_cnn.checkpoint")
     logger.logger.info("Model saved successfully")
 else:
     # Load the model checkpoint
