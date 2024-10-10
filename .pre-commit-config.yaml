@@ -11,3 +11,5 @@ repos:
     hooks:
       - id: black
         stages: [pre-commit]
+        args: [--line-length=79]
+        language_version: python3.11
