@@ -1,5 +1,7 @@
 import torch
 
+from logger import logger
+
 
 def check_accuracy(loader, model, device):
     """
@@ -33,6 +35,6 @@ def check_accuracy(loader, model, device):
 
         # Calculate accuracy
         accuracy = float(num_correct) / float(num_samples) * 100
-        print(f"Got {num_correct}/{num_samples} with accuracy {accuracy:.2f}%")
-    
+        logger.info(f"Got {num_correct}/{num_samples} with accuracy {accuracy:.2f}%")
+
     model.train()  # Set the model back to training mode
