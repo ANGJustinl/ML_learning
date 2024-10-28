@@ -71,7 +71,7 @@ From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.m
     - 资料：
         1. [MoFA框架](https://github.com/moxin-org/mofa/)
         2. [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
-- [ ] 7. [实现一个大模型训练推理优化的方法或工具](./Speed_optimization/)
+- [x] 7. [实现一个大模型训练推理优化的方法或工具](./Speed_optimization/)
     - 具体：使用Python与C++、CUDA等，实现一个大模型训练推理优化的方法或工具，并分析其优缺点
     - 要求：算法实现代码需包含注释，并附上算法的基本原理和推导过程
     - 展示方式：当场展示（可线上）+考核时提问+可复现源码及其文档

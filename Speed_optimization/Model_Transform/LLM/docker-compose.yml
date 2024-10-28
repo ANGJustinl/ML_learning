@@ -1,0 +1,20 @@
+version: "3"
+services:
+    tritonserver:
+        deploy:
+            resources:
+                reservations:
+                    devices:
+                        - driver: nvidia
+                          count: all
+                          capabilities:
+                              - gpu
+        container_name: trt_llm
+        ipc: host
+        ulimits:
+            memlock: -1 # 允许容器锁定任意大小的内存
+            stack: 67108864 # 设置容器内进程的栈大小为64MB
+        restart: always
+        volumes:
+            - /srv/dev-disk-by-uuid-566eefe7-5091-488e-a5c2-6222df79c164/ML/LLM_models/qwen_models:/root/qwen
+        image: nvcr.io/nvidia/tritonserver:24.03-trtllm-python-py3
