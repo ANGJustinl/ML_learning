@@ -6,7 +6,7 @@ from ultralytics import YOLO
 
 from utils import random_color
 
-model = YOLO("intro_test/Yolo_v10/models/no_dynamic/yolov10n_fp16.engine")
+model = YOLO("Vision/models/no_dynamic/yolov10n_fp16.engine")
 logger.info("Pre-trained YOLOv10s Model loaded")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

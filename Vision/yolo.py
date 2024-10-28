@@ -7,7 +7,7 @@ from ultralytics import YOLO
 
 from utils import frame_rate_caculate
 
-model = YOLO("intro_test\Yolo_v10\models\yolov10n.pt")
+model = YOLO("Vision\models\yolov10n.pt")
 logger.info("Pre-trained YOLOv10s Model loaded")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

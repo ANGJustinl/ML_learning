@@ -10,8 +10,8 @@ from ultralytics.utils.checks import check_yaml
 from utils import *
 
 
-coco_yaml_path = "intro_test\Yolo_v10\coco8.yaml"
-Model_path = "intro_test\Yolo_v10\models\yolov10s_hg.onnx"
+coco_yaml_path = "Vision\coco8.yaml"
+Model_path = "Vision\models\yolov10s_hg.onnx"
 
 with open(coco_yaml_path, "r") as config:
     config = yaml_load(check_yaml(coco_yaml_path))
