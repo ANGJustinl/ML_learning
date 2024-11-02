@@ -1,6 +1,11 @@
 # 4. 图像物体识别算法
 
     python yolo_better.py
+<details> 
+<summary>运行结果</summary> 
+
+![vision](./vision.png)
+</details>
 
 ### 使用模型：Yolov10s
 ### 训练数据集：coco8

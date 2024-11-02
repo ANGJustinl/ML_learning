@@ -38,7 +38,14 @@ From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.m
     - 资料：
         1. [卷积神经网络原理](https://zh.d2l.ai/chapter_convolutional-neural-networks/index.html)
         2. [MNIST数据集图像分类](https://pytorch.org/tutorials/beginner/basics/optimization_tutorial.html)
-- [ ] 3. 实现一个基于深度学习的序列预测与生成模型
+   
+    <details> 
+    <summary>运行结果</summary>
+
+    [mnist_cnn.checkpoint](./MNIST_CNN\mnist_cnn.checkpoint)
+    </details>
+
+- [x] 3. 实现一个基于深度学习的序列预测与生成模型
     - 具体：使用TensorFlow或PyTorch实现一个LSTM/GRU/GPT等模型选其一，并训练模型进行序列预测与生成
     - 要求：算法实现代码需包含注释，并附上算法的基本原理和推导过程
     - 展示方式：当场展示（可线上）+考核时提问+可复现源码及其文档
@@ -46,6 +53,13 @@ From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.m
     - 资料：
         1. [LSTM/GRU原理](https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21)
         2. [Transformer for Time Series](https://medium.com/intel-tech/how-to-apply-transformers-to-time-series-models-spacetimeformer-e452f2825d2e)
+
+    <details> 
+    <summary>运行结果</summary>
+    
+    ![train_loss](./train_loss.png)
+    </details>
+
 - [x] 4. [实现一个图像物体识别算法与模型](./Vision/)
     - 具体：使用Python或其他编程语言实现一个基于规则或深度学习的图像物体识别算法，并训练模型进行图像分类
     - 要求：算法实现代码需包含注释，并附上算法的基本原理和推导过程
@@ -53,8 +67,15 @@ From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.m
     - 备注：可选开源数据集如COCO、VOC等，展示时请放出训练loss曲线
     - 资料：
         1. [Ultralytics](https://www.ultralytics.com/)
-        2. [OpenCV Tutorial](https://opencv-python-tutorials.readthedocs.io/)
-- [ ] 5. 实现一个初等的自然语言处理模型
+        2. [OpenCV Tutorial](https://opencv-python-tutorials.readthedocs.io/)   
+
+    <details> 
+    <summary>运行结果</summary>
+
+    ![vision](./Vision/vision.png)
+    </details>
+
+- [x] 5. [实现一个初等的自然语言处理模型](./LLM/LLaMA-Factory/)
     - 具体：使用Python或其他编程语言实现一个基于规则或深度学习的自然语言处理模型，并训练模型进行文本分类或生成
     - 要求：算法实现代码需包含注释，并附上算法的基本原理和推导过程
     - 展示方式：当场展示（可线上）+考核时提问+可复现源码及其文档
@@ -62,8 +83,14 @@ From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.m
     - 资料：
         1. [Transformer原理](https://blogs.nvidia.com/blog/what-is-a-transformer-model/)
         2. [LLM Comprehensive View](https://arxiv.org/abs/2401.02038)
-        3. [nanoGPT](https://github.com/karpathy/nanoGPT)
-- [ ] 6. 实现一个自定功能的AI智能体模型
+        3. [nanoGPT](https://github.com/karpathy/nanoGPT)   
+    
+    <details> 
+
+    [llamaDrawer-7B.safetensors](./Agent/LLaMA-Factory\llamaDrawer-7B.safetensors)
+    </details>
+
+- [x] 6. [实现一个自定功能的AI智能体模型](./Agent/)
     - 具体：使用Python或其他编程语言实现一个基于规则或深度学习的智能体模型，并训练模型进行智能决策
     - 要求：算法实现代码需包含注释，并附上算法的基本原理和推导过程
     - 展示方式：当场展示（可线上）+考核时提问+可复现源码及其文档
@@ -71,6 +98,13 @@ From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.m
     - 资料：
         1. [MoFA框架](https://github.com/moxin-org/mofa/)
         2. [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
+   
+    <details> 
+
+    [llamaDrawer](./Agent\modelscope-agent\llamaDrawer\main.py)
+    ![llamaDrawer](./Agent\Agent.png)
+    </details>
+
 - [x] 7. [实现一个大模型训练推理优化的方法或工具](./Speed_optimization/)
     - 具体：使用Python与C++、CUDA等，实现一个大模型训练推理优化的方法或工具，并分析其优缺点
     - 要求：算法实现代码需包含注释，并附上算法的基本原理和推导过程
@@ -82,6 +116,12 @@ From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.m
         3. [onnxruntime](https://github.com/microsoft/onnxruntime)
         4. [TVM](https://github.com/apache/tvm)
         5. [XLA](https://github.com/openxla/xla)
+   
+    <details> 
+
+    [Speed_optimization_docker-compose.yml](./Speed_optimization\Model_Transform\LLM\docker-compose.yml)
+    </details>
+
 
 相关链接：
    1. https://paperswithcode.com/
