@@ -8,8 +8,10 @@
 <img src="https://img.shields.io/github/last-commit/ANGJustinl/ML_learning.svg?label=Updated&logo=github&cacheSeconds=600" alt="">
 </p>
 
+> [!NOTE]\
+> 所有运行结果均在本readme里, 位于details中
 
-From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.md
+#### From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.md
 
 ### 附：
 # 系统能力大赛与人工智能组考核方案
@@ -101,8 +103,8 @@ From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.m
    
     <details> 
 
-    [llamaDrawer](./Agent\modelscope-agent\llamaDrawer\main.py)
-    ![llamaDrawer](./Agent\Agent.png)
+    [llamaDrawer](./Agent/modelscope-agent/llamaDrawer/main.py)
+    ![llamaDrawer](./Agent/Agent.png)
     </details>
 
 - [x] 7. [实现一个大模型训练推理优化的方法或工具](./Speed_optimization/)
