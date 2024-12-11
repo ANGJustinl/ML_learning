@@ -11,6 +11,77 @@
 > [!NOTE]\
 > 所有运行结果均在本readme里, 位于details中
 
+- 0 基础
+  - 0.1 线性代数
+    - 向量、矩阵和张量
+    - 特征分解
+    - 行列式
+  - 0.2 概率与信息论
+  - 0.3 梯度的优化方法
+- 1 机器学习
+  - 1.1 机器学习概念与应用
+  - 1.2 监督学习与无监督学习
+  - 1.3 数据预处理与特征提取
+  - 1.4 线性回归
+  - 1.5 决策树与随机森林
+  - 1.6 岭回归与支持向量回归
+  - 1.7 聚类算法
+  - 1.8 马尔科夫链
+- 2 深度学习
+  - 2.1 感知机模型
+  - 2.2 反向传播算法
+  - 2.3 激活函数
+  - 2.4 卷积神经网络
+  - 2.5 ResNet模型
+  - 2.6 循环神经网络
+  - 2.7 对抗神经网络
+  - 2.8 Transformer
+- 3 视觉模型
+  - 3.1 R-CNN与Fast R-CNN
+  - 3.2 ViT
+  - 3.3 CLIP
+  - 3.4 NeRF vs. 3D Gaussian Spatting
+- 4 自然语言处理
+  - 4.1 Word2Vec
+  - 4.2 Positional Encoding
+  - 4.3 BERT与T5
+  - 4.4 GPT-2与LlaMA
+  - 4.5 RWKV与Mamba
+- 5 高效模型
+  - 5.1 CUDA Core vs. Tensor Core
+  - 5.2 cuBLAS与PyTorch C++ Extension
+  - 5.3 Pipeline vs. Tensor Parallelism
+  - 5.4 Data Distributed Parallelism
+  - 5.5 Huggingface Accelerate
+  - 5.6 Meta Fairscale
+  - 5.7 NVIDIA Megatron-LM vs. TensorRT-LM
+  - 5.8 MPI基础 & SSH
+  - 5.9 cuDNN & NCCL
+  - 5.10 NVIDIA NVLINK & InfiniBand
+  - 5.11 NVIDIA Docker vs. Singularity
+  - 5.12 高可用负载均衡集群介绍
+- 6 模型烘焙方法
+  - 6.1 适应性微调训练
+  - 6.2 量化感知训练
+  - 6.3 数据增强训练
+  - 6.4 状态增强训练
+  - 6.5 全量训练与权重冻结
+  - 6.6 模式专家系统
+  - 6.7 训练后量化增强
+  - 6.8 低精度训练加速
+  - 6.9 知识蒸馏与迁移训练
+  - 6.10 知识库与RAG匹配算法
+- 7 模型最新成果
+  - 7.1 Speculative Decoding
+  - 7.2 Flash Attention vs. PagedAttention
+  - 7.3 KV Cache vs. H2O
+  - 7.4 Linear Attention vs. Sparse Attention
+  - 7.5 GaussianPro vs. Visual-RWKV
+  - 7.6 BitNet vs. bGPT
+  - 7.7 Transformer with Infinitive Context
+  - 7.8 Associative Recall及其他benchmark
+ 
+    
 #### From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.md
 
 ### 附：
