@@ -11,6 +11,11 @@
 > [!NOTE]\
 > 所有运行结果均在本readme里, 位于details中
 
+主观路线图
+--- 
+
+### 基础部分可以看 [deeplearningbook-chinese](https://github.com/exacity/deeplearningbook-chinese)
+
 - 0 数学基础
   - 0.1 线性代数
     - 向量、矩阵和张量
@@ -33,6 +38,8 @@
   - 2.1 感知机模型
   - 2.2 反向传播算法
   - **! Must Read: Pytorch or Tensorflow**
+    - [这个是官方教程，比较复杂，但是最好看一下]( https://pytorch.org/tutorials/)
+    - [这个是我比较推荐的 Notebook 形式的学习，可以随时试一下示例](https://aiplusx.momodel.cn/classroom/class/664bf5db24cff38ad7d2a20e?activeKey=section)  
   - 2.3 激活函数
   - 2.4 卷积神经网络 CNN
   - 2.5 ResNet模型
@@ -90,8 +97,12 @@
 
 - 7 Agent 相关
   - 7.1 框架选择
- 
-    
+
+#### 未完待续
+
+原README
+--- 
+
 #### From https://gitee.com/xforcevesa/loongchip/blob/master/docs/presentation/exam.md
 
 ### 附：
