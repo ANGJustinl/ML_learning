@@ -1,5 +1,4 @@
-Diffusion Models: A Comprehensive Survey of Methods and Applications》（2022）
-
+# Diffusion Models: A Comprehensive Survey of Methods and Applications》（2022）
 
 # 扩散模型的基本原理与三种主要形式
 
@@ -83,6 +82,4 @@ Diffusion Models: A Comprehensive Survey of Methods and Applications》（2022�
 
 * **AIGC与扩散基础模型**：生成式预训练已在大型语言/视觉模型（GPT、ChatGPT等）取得突破。将生成预训练思路（decoder-only）迁移到扩散模型、训练大规模扩散基础模型，并探索其“涌现能力”，是新兴研究热点。尤其，将大型语言模型与扩散模型结合（如文本指导图像编辑）被认为前景广阔。
 
-上述方向指明了扩散模型未来研究的重点领域：结合理论与实践、探索更强大的模型结构和训练机制，以进一步提升扩散模型的性能和应用广度。
-
-**参考文献：** 文中引用均来自等。
+...点点点
