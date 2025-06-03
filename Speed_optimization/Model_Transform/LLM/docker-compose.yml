@@ -17,4 +17,4 @@ services:
         restart: always
         volumes:
             - /srv/dev-disk-by-uuid-566eefe7-5091-488e-a5c2-6222df79c164/ML/LLM_models/qwen_models:/root/qwen
-        image: nvcr.io/nvidia/tritonserver:25.04-trtllm-python-py3
+        image: nvcr.io/nvidia/tritonserver:25.05-trtllm-python-py3
